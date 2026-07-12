@@ -10,8 +10,8 @@
   --accent-color: #fdd34d;
   --main-color: #fff;
   --body-bg: #f7f3e8;
-  --btn-txt: #FFF0E7
-
+  --hero-color: #5c4900;
+  --btn-txt: #fff0e7;
 }
 
 body {
@@ -33,10 +33,10 @@ body {
   padding-bottom: 24px;
 }
 
-.header .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-box {
@@ -53,49 +53,161 @@ body {
   letter-spacing: -1.2px;
 }
 
-.header-list{
-    display: flex;
-    gap: 40px;
+.header-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-link {
-color: var(--text-color);
-font-size: 14px;
-font-weight: 400;
-line-height: 1.42;
-letter-spacing: -0.35px;
-text-transform: uppercase;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42;
+  letter-spacing: -0.35px;
+  text-transform: uppercase;
 }
 
 .header-link:hover,
-.header-link:focus{
-    color: var(--active-color);
+.header-link:focus {
+  color: var(--active-color);
 }
 
-.header-link::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: var(--active-color);
+.header-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--active-color);
 }
 
 .header-button {
-color: var(--btn-txt);
-text-align: center;
-font-size: 12px;
-font-weight: 700;
-line-height: 1.33;
-letter-spacing: 1.2px;
-text-transform: uppercase;
-border-radius: 9999px;
-background: var(--active-color);
-padding: 12px 32px;
-
+  color: var(--btn-txt);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  background: var(--active-color);
+  padding: 12px 32px;
 }
-
+/* Секція hero*/
 .hero {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 160px;
+  padding-bottom: 160px;
   background: var(--hero-bg);
 }
+
+.hero>.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+  color: var(--hero-color);
+  font-family: "Be Vietnam Pro";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  background: var(--accent-color);
+  width: 200px;
+  margin-bottom: 32px;
+}
+.hero-title {
+  align-self: stretch;
+  color: var(--title-color);
+  font-family: "Space Grotesk";
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 117px;
+  letter-spacing: -6.4px;
+  width: 670px;
+  margin-bottom: 32px;
+}
+
+.hero-span {
+  background: linear-gradient(90deg, #8d4a00 0%, #fe973c 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-descripto {
+  color: var(--text-color);
+  font-family: "Be Vietnam Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.33;
+  width: 576px;
+  margin-bottom: 32px;
+}
+
+.hero-list {
+  display: flex;
+  gap: 24px;
+}
+
+.hero-item:first-child {
+  .hero-button {
+    padding: 20px 40px;
+    border-radius: 9999px;
+    background: var(--active-color);
+    color: var(--btn-txt);
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.42;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
+}
+
+.hero-item:last-child {
+  .hero-button {
+    padding: 21px 40px;
+    border-radius: 9999px;
+    border: 1px solid rgba(172, 173, 173, 0.2);
+    background: var(--main-color);
+    color: var(--title-color);
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.42;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
+}
+
+.hero-itemes{
+    position: relative;
+}
+
+.hero-elem:first-child .hero-img{
+        width: 480px;
+        height: 605px;
+        border-radius: 48px;
+    }
+
+    .hero-elem:first-child{
+        transform: rotate(3deg);
+    }
+
+    .hero-elem:last-child .hero-img{
+        position: absolute;
+       left: -37.778px;
+       bottom: -41.123px;
+       border-radius: 48px;
+    }
+
+    .hero-elem:last-child{
+        transform: rotate(-6deg);
+    }
