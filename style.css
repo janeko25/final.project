@@ -498,3 +498,138 @@ body {
   border-bottom: 1px solid #E7E8E8;
 }
 
+/* Секція join */
+
+.join{
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+.join .container{
+border-radius: 48px;
+background-color: linear-gradient(135deg, #8D4A00 0%, #7C4000 100%);
+padding-top: 80px;
+padding-bottom: 86px;
+padding-left: 80px;
+padding-right: 80px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.join-title{
+color: var(--title-color);
+font-family: "Space Grotesk";
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: 1;
+letter-spacing: -3px;
+margin-bottom: 24px;
+width: 450px;
+
+}
+
+.join-text{
+color: var(--text-color);
+font-family: "Be Vietnam Pro";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 29.25px;
+width: 456px;
+margin-bottom: 24px;
+}
+
+.join-list{
+  display: flex;
+}
+
+.join-icon{
+  width: 36px;
+  height: 36px;
+}
+
+.join-item{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #FE973C;
+}
+
+.join-item:nth-child(2){
+  transform: translateX(-10px);
+  background-color: white;
+}
+
+.join-item:nth-child(3){
+  transform: translateX(-20px);
+  background-color: white;
+}
+
+.join-box{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.join-members{
+color: var(--text-color);
+font-family: "Be Vietnam Pro";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.42;
+}
+
+.join-form{
+  width: 456px;
+  font-family: "Be Vietnam Pro";
+}
+
+.join-lable{
+  display: block;
+  margin-bottom: 50px;
+  color: var(--text-color);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.join-input{
+  display: block;
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(207, 207, 207, 0.509);
+  padding-left: 28px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: var(--text-color);
+  }
+
+.join-btn{
+  width: 100%;
+  height: 58px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(52, 51, 51);
+  color: white;
+  margin-bottom: 18px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.join-desc{
+  text-align: center;
+  color: var(--text-color);
+  font-size: 11px;
+  line-height: 1.4;
+  padding-top: 12px;
+  min-width: 90%;
+}
