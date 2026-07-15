@@ -27,16 +27,16 @@
         <nav class="header-nav">
           <ul class="header-list">
             <li class="header-item">
-              <a href="#" class="header-link">Trends</a>
+              <a href="#trends" class="header-link">Trends</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-link">Archives</a>
+              <a href="#about" class="header-link">Archives</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-link">Drops</a>
+              <a href="#drops" class="header-link">Drops</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-link">Community</a>
+              <a href="#evolution" class="header-link">Community</a>
             </li>
           </ul>
         </nav>
@@ -45,7 +45,7 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="trends">
         <div class="container">
           <div class="hero-vrap">
             <p class="hero-text">The Y2K Renaissance</p>
@@ -63,7 +63,9 @@
                 </button>
               </li>
               <li class="hero-item">
-                <button class="hero-button" type="button">View Drops</button>
+                <button class="hero-button drop-button" type="button">
+                  View Drops
+                </button>
               </li>
             </ul>
           </div>
@@ -77,7 +79,7 @@
           </ul>
         </div>
       </section>
-      <section class="advantage">
+      <section class="advantage" id="about">
         <div class="container">
           <div class="advantage-box">
             <h2 class="advantage-title">
@@ -119,7 +121,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" id="drops">
         <div class="container">
           <h3 class="gallery-title">Trend Gallery</h3>
           <div class="gallery-box">
@@ -132,23 +134,46 @@
           <ul class="gallery-list">
             <li class="gallery-item">
               <img src="./img/pants.png" alt="pants" class="gallery-img" />
+
+              <div class="gallery-info">
+                <p class="gallery-label">ESSENTIAL</p>
+                <h4 class="gallery-name">Cargo Pants</h4>
+              </div>
             </li>
+
             <li class="gallery-item">
               <img
                 src="./img/sneakers.png"
                 alt="sneakers"
                 class="gallery-img" />
+
+              <div class="gallery-info">
+                <p class="gallery-label">ICONIC</p>
+                <h4 class="gallery-name">Chunky Sneakers</h4>
+              </div>
             </li>
+
             <li class="gallery-item">
               <img src="./img/hoodies.png" alt="hoodies" class="gallery-img" />
+
+              <div class="gallery-info">
+                <p class="gallery-label">STREET</p>
+                <h4 class="gallery-name">Oversized Hoodies</h4>
+              </div>
             </li>
+
             <li class="gallery-item">
-              <img src="./img/tech.png" alt="" class="gallery-img" />
+              <img src="./img/tech.png" alt="tech" class="gallery-img" />
+
+              <div class="gallery-info">
+                <p class="gallery-label">DIGITAL</p>
+                <h4 class="gallery-name">Retro Tech</h4>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="table">
+      <section class="table" id="evolution">
         <div class="container">
           <h3 class="table-title">Evolution of Style</h3>
           <p class="table-text">
@@ -198,44 +223,103 @@
       <section class="join">
         <div class="container">
           <div>
-          <h3 class="join-title">Join the Movement</h3>
-          <p class="join-text">
-            Sign up to receive early access to archive drops, community
-            lookbooks, and sun-drenched style guides.
-          </p>
-          <div class="join-box">
-          <ul class="join-list">
-            <li class="join-item"><img src="./img/member1.png" alt="member1" class="join-icon"></li>
-            <li class="join-item"><img src="./img/member2.png" alt="member2" class="join-icon"></li>
-            <li class="join-item"><img src="./img/member3.png" alt="member3" class="join-icon"></li>
-          </ul>
-          <p class="join-members">+2,400 members</p>
-          </div>
+            <h3 class="join-title">Join the Movement</h3>
+            <p class="join-text">
+              Sign up to receive early access to archive drops, community
+              lookbooks, and sun-drenched style guides.
+            </p>
+            <div class="join-box">
+              <ul class="join-list">
+                <li class="join-item">
+                  <img
+                    src="./img/member1.png"
+                    alt="member1"
+                    class="join-icon" />
+                </li>
+                <li class="join-item">
+                  <img
+                    src="./img/member2.png"
+                    alt="member2"
+                    class="join-icon" />
+                </li>
+                <li class="join-item">
+                  <img
+                    src="./img/member3.png"
+                    alt="member3"
+                    class="join-icon" />
+                </li>
+              </ul>
+              <p class="join-members">+2,400 members</p>
+            </div>
           </div>
           <form class="join-form">
-            <label class="join-lable">Full name
-              <input class="join-input" type="text" placeholder="Alex Rivera">
+            <label class="join-lable"
+              >Full name
+              <input class="join-input" type="text" placeholder="Alex Rivera" />
             </label>
-            <label class="join-lable">Email address
-              <input class="join-input" type="text" placeholder="alex@solarium.com">
+            <label class="join-lable"
+              >Email address
+              <input
+                class="join-input"
+                type="text"
+                placeholder="alex@solarium.com" />
             </label>
-            <button class="join-btn" type="submit">AUTHENTICATE PROFILE</button>
-            <p class="join-desc">BY JOINING, YOU AGREE TO OUR CURATOR TERMS AND LIFESTYLE GUIDELINE</p>
+            <button class="join-btn" type="button">AUTHENTICATE PROFILE</button>
+            <p class="join-desc">
+              BY JOINING, YOU AGREE TO OUR CURATOR TERMS AND LIFESTYLE GUIDELINE
+            </p>
           </form>
         </div>
       </section>
+      <div class="backdrop is-hidden">
+        <div class="modal">
+          <button class="modal-close" type="button" aria-label="Close modal">
+            &times;
+          </button>
+
+          <div class="modal-wrap">
+            <div class="modal-box">
+              <img
+                src="./img/modal-shoe.png"
+                alt="Sneaker"
+                class="modal-shoe" />
+            </div>
+
+            <h2 class="modal-title">SECRET DROP!</h2>
+
+            <p class="modal-text">
+              You've unlocked a sun-drenched exclusive reward for the new season
+              collection.
+            </p>
+
+            <div class="modal-discount">
+              <p class="modal-percent">-15%</p>
+              <p class="modal-order">OFF YOUR NEXT ORDER</p>
+            </div>
+
+            <div class="modal-code">GOITEENS-STYLE</div>
+
+            <button class="modal-copy" type="button">COPY CODE</button>
+
+            <p class="modal-small">VALID FOR THE NEXT 24 HOURS ONLY</p>
+          </div>
+        </div>
+      </div>
     </main>
+    <script src="./script.js"></script>
+    <footer>
+      <section class="footer">
+        <div class="container">
+          <a class="footer-logo" href="./index.html">SOLARIUM</a>
+          <a class="fotter-link" href="https://www.instagram.com/">Instagram</a>
+          <a class="fotter-link" href="https://x.com/?lang=uk">Twitter</a>
+          <a class="fotter-link" href="https://www.tiktok.com/uk-UA/">TikTok</a>
+          <a class="fotter-link" href="https://discord.com/">Discord</a>
+          <p class="fotter-text">
+            &copy; 2024 SOLARIUM ARCHIVE. CURATED IN LIGHT.
+          </p>
+        </div>
+      </section>
+    </footer>
   </body>
-  <footer>
-    <section class="footer">
-      <div class="container">
-    <a class="footer-logo" href="./index.html">SOLARIUM</a>
-    <a class="fotter-link" href="https://www.instagram.com/">Instagram</a>
-    <a class="fotter-link" href="https://x.com/?lang=uk">Twitter</a>
-    <a class="fotter-link" href="https://www.tiktok.com/uk-UA/">TikTok</a>
-    <a class="fotter-link" href="https://discord.com/">Discord</a>
-    <p class="fotter-text">&copy; 2024 SOLARIUM ARCHIVE. CURATED IN LIGHT.</p>
-    </div>
-    </section>
-  </footer>
 </html>
