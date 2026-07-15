@@ -24,8 +24,7 @@ body {
   width: 1212px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 2px solid red;
-}
+} 
 
 .header {
   padding-top: 24px;
@@ -33,7 +32,7 @@ body {
   background-color: var(--header-color);
 }
 
-.header .container {
+.header> .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -220,7 +219,7 @@ body {
   padding-bottom: 128px;
 }
 
-.advantage .container {
+.advantage> .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -257,10 +256,7 @@ body {
   font-family: "Be Vietnam Pro";
   font-weight: 500;
   border-bottom: 4px solid var(--accent-color);
-}
-
-/* .advantage-coment {
-} */
+} 
 
 .advantage-desc {
   color: var(--title-color);
@@ -412,12 +408,19 @@ body {
 
 /* Секція table */
 
+.table{
+  padding-top: 128px;
+  padding-bottom: 128px;
+  background-color: var(--advantage-bg);
+}
+
 .table-table {
   padding-top: 128px;
   padding-bottom: 128px;
   background-color: var(--advantage-bg);
   border-collapse: collapse;
 }
+
 
 .table-title {
   color: var(--title-color);
@@ -505,7 +508,7 @@ body {
   padding-bottom: 128px;
 }
 
-.join .container{
+.join> .container{
 border-radius: 48px;
 background-color: linear-gradient(135deg, #8D4A00 0%, #7C4000 100%);
 padding-top: 80px;
@@ -632,4 +635,55 @@ line-height: 1.42;
   line-height: 1.4;
   padding-top: 12px;
   min-width: 90%;
+}
+
+/* Секція footer */
+
+.footer{
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-left: 80px;
+  background-color: var(--advantage-bg);
+}
+
+.footer> .container{
+  display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.footer-logo{
+color: var(--title-color);
+font-family: "Space Grotesk";
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.2;
+letter-spacing: -1.5px;
+
+}
+
+.fotter-link{
+color: var(--text-color);
+font-family: "Be Vietnam Pro";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.42;
+letter-spacing: 0.35px;
+}
+
+.fotter-link:hover,
+.fotter-link:focus{
+  color: var(--active-color);
+}
+
+.fotter-text{
+color: var(--text-color);
+font-family: "Be Vietnam Pro";
+font-size: 10px;
+font-weight: 500;
+line-height: 2;
+letter-spacing: 2px;
+text-transform: uppercase;
 }
